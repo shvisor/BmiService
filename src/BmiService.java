@@ -5,8 +5,8 @@ public class BmiService {
      * @param weight вес в килограммах
      * @return индекс массы тела приведенный к типу int
      */
-    public double calculate(double height, int weight) {
-        double index = weight / Math.pow(height, 2);
-        return (int) index;
+    public int calculate(double height, int weight) {
+        int index = (int) (weight / Math.pow(height, 2));
+        return index;
     }
 }
